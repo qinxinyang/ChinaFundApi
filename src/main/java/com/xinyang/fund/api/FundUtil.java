@@ -109,12 +109,16 @@ public class FundUtil {
         }
     }
 
-    public static void main(String[] args) {
-        System.getProperties().put("http.proxyHost", "10.2.0.10");
-        System.getProperties().put("http.proxyPort", "808");
-        Fund fund = FundUtil.loadByFundCode("161005");
-        System.out.println(fund);
-        System.getProperties().remove("http.proxyHost");
-        System.getProperties().remove("http.proxyPort");
-    }
+//    public static void main(String[] args) {
+//        System.getProperties().put("http.proxyHost", "10.2.0.10");
+//        System.getProperties().put("http.proxyPort", "808");
+//        Fund fund = FundUtil.loadByFundCode("161005");
+//        System.out.println(fund.getChineseName());
+//        System.out.println(fund.getFundCode());
+//        List<WorthItem> worthItems = fund.getWorthItems();
+//        WorthItem worthItem = worthItems.get(worthItems.size() - 1);
+//        System.out.println(worthItem);
+//        System.getProperties().remove("http.proxyHost");
+//        System.getProperties().remove("http.proxyPort");
+//    }
 }
